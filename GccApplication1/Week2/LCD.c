@@ -79,9 +79,9 @@ void lcd_writeLine2 ( char text2[] )
 {
 	// dan de eerste 8 karakters = regel 2
 	// eerste pos regel 2
-	uint8_t strsize = strlen(text1);
+	uint8_t strsize = strlen(text2);
 	for (uint8_t i=0; i<strsize; i++) {
-		lcd_writeChar( text1[i] );
+		lcd_writeChar( text2[i] );
 	}
 }
 
