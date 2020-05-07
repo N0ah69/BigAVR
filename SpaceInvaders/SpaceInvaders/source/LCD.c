@@ -1,8 +1,5 @@
 #include "LCD.h"
-#include <string.h>
-#include <avr/io.h>
-#include <util/delay.h>
-#include <avr/interrupt.h>
+#include "Generic.h"
 
 void lcd_command(unsigned char command)  //Function to send command instruction to LCD
 {

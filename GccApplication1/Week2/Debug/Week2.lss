@@ -131,7 +131,8 @@ Disassembly of section .text:
   b6:	a4 cf       	rjmp	.-184    	; 0x0 <__vectors>
 
 000000b8 <lcd_command>:
-#include "LCD.h"
+#include <util/delay.h>
+#include <avr/interrupt.h>
 
 void lcd_command(unsigned char command)  //Function to send command instruction to LCD
 {

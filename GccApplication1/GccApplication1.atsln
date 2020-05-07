@@ -3,11 +3,15 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Atmel Studio Solution File, Format Version 11.00
 VisualStudioVersion = 14.0.23107.0
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{54F91283-7BC4-4236-8FF9-10F437C3AD48}") = "GccApplication1", "GccApplication1\GccApplication1.cproj", "{DCE6C7E3-EE26-4D79-826B-08594B9AD897}"
+Project("{54F91283-7BC4-4236-8FF9-10F437C3AD48}") = "Week_1", "GccApplication1\Week_1.cproj", "{DCE6C7E3-EE26-4D79-826B-08594B9AD897}"
 EndProject
-Project("{54F91283-7BC4-4236-8FF9-10F437C3AD48}") = "Week2", "Week2\Week2.cproj", "{80B1FADA-14D2-449A-9DFD-CCB2FB32CADB}"
+Project("{54F91283-7BC4-4236-8FF9-10F437C3AD48}") = "Week_2", "Week2\Week_2.cproj", "{80B1FADA-14D2-449A-9DFD-CCB2FB32CADB}"
 EndProject
 Project("{54F91283-7BC4-4236-8FF9-10F437C3AD48}") = "Week_3", "Week_3\Week_3.cproj", "{BB9A261A-1B77-44E2-99CF-420F93501325}"
+EndProject
+Project("{54F91283-7BC4-4236-8FF9-10F437C3AD48}") = "Week_4", "Week_4\Week_4.cproj", "{48BF7501-8DFB-45CE-81DA-012CC5BEE14B}"
+EndProject
+Project("{54F91283-7BC4-4236-8FF9-10F437C3AD48}") = "week_5", "week_5\Week_5.cproj", "{ED60A846-31A8-4D08-9AF5-D0B4BD355F6F}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -27,6 +31,14 @@ Global
 		{BB9A261A-1B77-44E2-99CF-420F93501325}.Debug|AVR.Build.0 = Debug|AVR
 		{BB9A261A-1B77-44E2-99CF-420F93501325}.Release|AVR.ActiveCfg = Release|AVR
 		{BB9A261A-1B77-44E2-99CF-420F93501325}.Release|AVR.Build.0 = Release|AVR
+		{48BF7501-8DFB-45CE-81DA-012CC5BEE14B}.Debug|AVR.ActiveCfg = Debug|AVR
+		{48BF7501-8DFB-45CE-81DA-012CC5BEE14B}.Debug|AVR.Build.0 = Debug|AVR
+		{48BF7501-8DFB-45CE-81DA-012CC5BEE14B}.Release|AVR.ActiveCfg = Release|AVR
+		{48BF7501-8DFB-45CE-81DA-012CC5BEE14B}.Release|AVR.Build.0 = Release|AVR
+		{ED60A846-31A8-4D08-9AF5-D0B4BD355F6F}.Debug|AVR.ActiveCfg = Debug|AVR
+		{ED60A846-31A8-4D08-9AF5-D0B4BD355F6F}.Debug|AVR.Build.0 = Debug|AVR
+		{ED60A846-31A8-4D08-9AF5-D0B4BD355F6F}.Release|AVR.ActiveCfg = Release|AVR
+		{ED60A846-31A8-4D08-9AF5-D0B4BD355F6F}.Release|AVR.Build.0 = Release|AVR
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

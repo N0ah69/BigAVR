@@ -8,7 +8,6 @@
 
 #ifndef LCD_H_
 #define LCD_H_
-#define F_CPU 8e6
 
 
 void lcd_command(unsigned char command);

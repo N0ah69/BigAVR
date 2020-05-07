@@ -1,13 +1,13 @@
-/*
- * Week_3.c
- *
- * Created: 12-Feb-20 12:08:02
- * Author : pmhol
- */ 
+
 
 #include "LCD.h"
+#include <string.h>
+#include <avr/io.h>
+#include <util/delay.h>
+#include <avr/interrupt.h>
 
 
+#define BIT(x) (1<<x)
 
 void wait( int ms )
 {
@@ -49,23 +49,39 @@ void initTimer( void )
 }
 
 
+void timer2Init( void )
+{
+	OCR2 = 125;				// Compare value of counter 2
+	TIMSK |= BIT(7);		// T2 compare match interrupt enable
+	TCCR2 = 0b00001011;		// Initialize T2: timer, prescaler=32,
+}
+
+
+
 int main(void)
 {
     init_lcd();
-	initTimer();
+	timer2Init();
 	sei();
-	
+	DDRD = 0xff;
     while (1) 
     {
-		wait(10);
-		
-		DDRB = 0xFF; // PORTB is output
-		PORTB = TCNT2;
-		char string[9];
-		itoa(TCNT2, string, 9);
-		lcd_writeLine1(string);
+	
 		wait(100);
 		
     }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
 
